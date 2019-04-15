@@ -32,8 +32,8 @@
                 <i class="fa fa-bars fa-lg"></i>
                 </a>
                 <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Dashboard</a>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Dashboard</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Settings</a>
@@ -59,7 +59,7 @@
 
             <ul class="nav flex-column flex-nowrap text-truncate">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link" href="main.html">News</a>
                 </li>
                 <li>
                     <a class="nav-link" href="sessions.html">Sessions</a>
@@ -80,13 +80,46 @@
             </div>
         </div>
         <div class="col p-3">
-            <h1>Welcome to DeepSearch</h1>
+            <h1>Support (Version 3.0.5)</h1>
             <div class="line"></div>
-            <h2>Version 3.0.5</h2>
-            <ul>
-                <li> Bugs have been fixed.</li>
-                <li> New Features have been added.</li>
-            </ul>
+ 
+            <div class="form-group">
+                <label for="TypeOfBugForm">Type:</label>
+                <select class = "form-control" id="TypeOfBugForm">
+                    <option>Bug</option>
+                    <option>Feature</option>
+                </select>    
+            </div>
+            <div class="form-group">
+                <label for="DescriptionForm">Description:</label>
+                <textarea class="form-control" id="DescriptionForm" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="line"></div>
+            <h1>Recently submitted</h1>
+            <table class="table">
+                <tr>
+                    <td>Date</td>
+                    <td>Type</td>
+                    <td>Description</td>
+                    <td>User</td>
+                    <td>Status</td>
+                </tr>
+                <tr>
+                    <td>29/5/2019</td>
+                    <td>Bug</td>
+                    <td>Training with over 10 directories breaks...</td>
+                    <td>Elmo</td>
+                    <td>Open</td>
+                </tr>
+                    <td>27/5/2019</td>
+                    <td>Feature</td>
+                    <td>When training is complete it should send me an email.</td>
+                    <td>Dan</td>
+                    <td>Closed</td>
+                <tr>
+            </table>
+
         </div>
     </div>
 </div>
