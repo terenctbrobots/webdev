@@ -9,77 +9,36 @@
     <title>DeepSearch 3.0</title>
 
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="fa/js/solid.js"></script>
+    <script src="fa/js/fontawesome.js"></script>
+
 </head>
-
-<body>
-    <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <img src="logo.png" class="rounded mx-auto d-block" width="100"/>
-                <h3 class="text-center">DeepSearch</h3>
-            </div>
-
-            <ul class="list-unstyled components">
-                <li>
-                    <a href="main.html">News</a>
-                </li>
-                <li>
-                    <a href="session.html">Sessions</a>
-                </li>
-                <li>
-                    <a href="train.html">Train</a>
-                </li>
-                <li>
-                    <a class="activeside" href="#">Search</a>
-                </li>
-                <li>
-                    <a href="toolbox.html">Toolbox</a>
-                </li>
-                <li>
-                    <a href="support.html">Support</a>
-                </li>
-            </ul>
-
- <!--           <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-                </li>
-            </ul>-->
-        </nav>
-
-        <!-- Page Content  -->
-        <div id="content">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-<!--                        <span>Toggle Sidebar</span>-->
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
+<body class="navbar-expand-md">
+<div class="container-fluid fixed-top bg-dark shadow">
+    <div class="row collapse show no-gutters d-flex h-100 position-relative">
+        <div class="col-3 px-0 w-sidebar navbar-collapse collapse d-none d-md-flex">
+            <!-- spacer col -->
+            <a href="#" class="navbar-brand">DeepSearch</a>
+        </div>
+        <div class="col px-3 px-md-0 py-3">
+            <div class="d-flex">
+                <!-- toggler -->
+                <a data-toggle="collapse" href="#" data-target=".collapse" role="button" style="outline: none;" class="">
+                <i class="fa fa-bars fa-lg"></i>
+                </a>
+                <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Dashboard</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Settings</a>
                             </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Profile</a>
                             </li>
@@ -87,98 +46,58 @@
                                 <a class="nav-link" href="#">Logout</a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </nav>
-
-            <div>
-                <h1>Search</h1>
-                <form class="form-inline">
-                  <i class="fas fa-search" aria-hidden="true"></i>
-                  <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
-                </form>
-            <div>
-            <div class="line"/>
-            <h2>Directories</h2>
-            <table class="table">
-                <tr>
-                    <td>Directory</td>
-                    <td>Status</td>
-                </tr>
-                <tr>
-                    <td>Models/Directory1</td>
-                    <td>Training...</td>
-                </tr>
-                <tr>
-                    <td>Models/Directory2</td>
-                    <td>Normal</td>
-                </tr>
-                <tr>
-                    <td>Models/Directory3</td>
-                    <td>Normal</td>
-                </tr>
-            </table>
-            <div class="line"/>
-            <h2>Models</h2>
-            <table class="table">
-                <tr>
-                    <td>Name</td>
-                    <td>Notes</td>
-                    <td>Parameters</td>
-                </tr>
-                <tr>
-                    <td>My Model 1</td>
-                    <td>Notes on Model 1</td>
-                    <td>???</td>
-                </tr>
-                <tr>
-                    <td>My Model 2</td>
-                    <td>Notes on Model 2</td>
-                    <td>???</td>
-                </tr>
-                <tr>
-                    <td>My Model 3</td>
-                    <td>Notes on Model 3</td>
-                    <td>???</td>
-                </tr>
-            </table>
-            <div class="line"/>
-            <div class="float-right">
-                <input type="button" value="Add" class="btn btn-info">
-                <input type="button" value="Remove" class="btn btn-danger">
-            </div>        
-
-            <!--<div class="line"></div>
-
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+            </div>
         </div>
     </div>
+</div>
+<div class="container-fluid px-0 h-100">
+    <div class="row min-vh-100 collapse show no-gutters d-flex h-100 position-relative">
+        <div class="col-3 p-0 h-100 text-white w-sidebar navbar-collapse collapse d-none d-md-flex sidebar">
+            <!-- fixed sidebar -->
+            <div class="navbar-dark bg-dark position-fixed h-100 w-sidebar">
+                <img src="logo.png" class="rounded mx-auto d-block" width="100"/>
+
+            <ul class="nav flex-column flex-nowrap text-truncate">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="sessions.html">Sessions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="train.html">Train</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="toolbox.html">Toolbox</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="support.html">Support</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="col p-3">
+            <h1>Welcome to DeepSearch</h1>
+            <div class="line"></div>
+            <h2>Version 3.0.5</h2>
+            <ul>
+                <li> Bugs have been fixed.</li>
+                <li> New Features have been added.</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
-        });
-    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
 </body>
-
 </html>
