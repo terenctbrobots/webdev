@@ -34,10 +34,6 @@ body {
 
 }
 
-.active {
-    color: white;
-}
-
 .user_card {
     height: 400px;
     width: 350px;
@@ -55,6 +51,7 @@ body {
     border-radius: 5px;
 
 }
+
 .brand_logo_container {
     position: absolute;
     height: 170px;

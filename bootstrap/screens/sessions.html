@@ -19,138 +19,176 @@
 
 </head>
 <body class="navbar-expand-md">
-<div class="container-fluid fixed-top bg-dark shadow">
-    <div class="row collapse show no-gutters d-flex h-100 position-relative">
-        <div class="col-3 px-0 w-sidebar navbar-collapse collapse d-none d-md-flex">
-            <!-- spacer col -->
-            <a href="#" class="navbar-brand">DeepSearch</a>
-        </div>
-        <div class="col px-3 px-md-0 py-3">
-            <div class="d-flex">
-                <!-- toggler -->
-                <a data-toggle="collapse" href="#" data-target=".collapse" role="button" style="outline: none;" class="">
-                <i class="fa fa-bars fa-lg"></i>
-                </a>
-                <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Dashboard</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="modal" data-target="#profileModal">Profile</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Logout</a>
-                            </li>
-                        </ul>
+    <div class="container-fluid fixed-top bg-dark shadow">
+        <div class="row collapse show no-gutters d-flex h-100 position-relative">
+            <div class="col-3 px-0 w-sidebar navbar-collapse collapse d-none d-md-flex">
+                <!-- spacer col -->
+                <a href="#" class="navbar-brand">DeepSearch</a>
+            </div>
+            <div class="col px-3 px-md-0 py-3">
+                <div class="d-flex">
+                    <!-- toggler -->
+                    <a data-toggle="collapse" href="#" data-target=".collapse" role="button" style="outline: none;" class="">
+                        <i class="fa fa-bars fa-lg"></i>
+                    </a>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#profileModal">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container-fluid px-0 h-100">
-    <div class="row min-vh-100 collapse show no-gutters d-flex h-100 position-relative">
-        <div class="col-3 p-0 h-100 text-white w-sidebar navbar-collapse collapse d-none d-md-flex sidebar">
-            <!-- fixed sidebar -->
-            <div class="navbar-dark bg-dark position-fixed h-100 w-sidebar">
-                <img src="logo.png" class="rounded mx-auto d-block" width="100"/>
+    <div class="container-fluid px-0 h-100">
+        <div class="row min-vh-100 collapse show no-gutters d-flex h-100 position-relative">
+            <div class="col-3 p-0 h-100 text-white w-sidebar navbar-collapse collapse d-none d-md-flex sidebar">
+                <!-- fixed sidebar -->
+                <div class="navbar-dark bg-dark position-fixed h-100 w-sidebar">
+                    <img src="logo.png" class="rounded mx-auto d-block" width="100"/>
 
-            <ul class="nav flex-column flex-nowrap text-truncate">
-                <li class="nav-item">
-                    <a class="nav-link" href="main.html">News</a>
-                </li>
-                <li>
-                    <a class="nav-link active" href="sessions.html">Sessions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="train.html">Train</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="search.html">Search</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="toolbox.html">Toolbox</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="support.html">Support</a>
-                </li>
-            </ul>
+                    <ul class="nav flex-column flex-nowrap text-truncate">
+                        <li class="nav-item">
+                            <a class="nav-link" href="main.html">News</a>
+                        </li>
+                        <li>
+                            <a class="nav-link active" href="sessions.html">Sessions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="train.html">Train</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="toolbox.html">Toolbox</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="support.html">Support</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="col p-3">
+            <div class="col p-3">
+                <div>
+                    <h1>Sessions</h1>
+                    <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#addModal">Add</button>
+                    <div>
+                        <div class="line"></div>
+
+                        <div class="jumbotron" style="background-color: cyan;">
+                            <h1>Using More hyperparams set 1 (Active)</h1>
+                            <p>Documents: 100</p>
+                            <p>Models: 2</p>
+                            <div>
+                                <div class="float-left">
+                                    <input type="button" value="Expand" class="btn btn-info float-left">
+                                </div>
+                                <div class="float-right">
+                                    <input type="button" value="Share" class="btn btn-info">
+                                    <input type="button" value="Clone" class="btn btn-info">
+                                    <input type="button" value="Delete" class="btn btn-danger">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron">
+                            <h1>Using More hyperparams set 2</h1>
+                            <p>Documents: 100</p>
+                            <p>Models: 2</p>
+                            <div>
                                 <div>
-                <h1>Sessions</h1>
-                <input type="button" value="Add" class="btn btn-info float-right">
-            <div>
-            <div class="line"></div>
+                                    <div class="float-left">
+                                        <input type="button" value="Expand" class="btn btn-info float-left">
+                                    </div>
+                                    <div class="float-right">
+                                        <input type="button" value="Activate" class="btn btn-info">
+                                        <input type="button" value="Share" class="btn btn-info">
+                                        <input type="button" value="Clone" class="btn btn-info">
+                                        <input type="button" value="Delete" class="btn btn-danger">
+                                    </div>
+                                </div>
+                            </div>
 
-            <div class="jumbotron">
-                <h1>Using More hyperparams set 1</h1>
-                <p>Documents: 100</p>
-                <p>Models: 2</p>
-                <div>
-                    <div class="float-left">
-                        <input type="button" value="Expand" class="btn btn-info float-left">
-                    </div>
-                    <div class="float-right">
-                        <input type="button" value="Share" class="btn btn-info">
-                        <input type="button" value="Clone" class="btn btn-info">
-                        <input type="button" value="Delete" class="btn btn-danger">
+                            <!-- Add Modal -->
+
+                            <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel">Add</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
+                              </div>
+                              <div class="modal-body">
+                                <h1>Elmo</h1>
+                    <div role="tabpanel">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#uploadTab" aria-controls="uploadTab" role="tab" data-toggle="tab">Upload</a>
+
+                        </li>
+                        <li role="presentation"><a href="#browseTab" aria-controls="browseTab" role="tab" data-toggle="tab">Browse</a>
+
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="uploadTab">upload Tab</div>
+                        <div role="tabpanel" class="tab-pane" id="browseTab">browseTab</div>
                     </div>
                 </div>
-            </div>
-            <div class="jumbotron">
-                <h1>Using More hyperparams set 2</h1>
-                <p>Documents: 100</p>
-                <p>Models: 2</p>
-                <div>
-                <div>
-                    <div class="float-left">
-                        <input type="button" value="Expand" class="btn btn-info float-left">
-                    </div>
-                    <div class="float-right">
-                        <input type="button" value="Share" class="btn btn-info">
-                        <input type="button" value="Clone" class="btn btn-info">
-                        <input type="button" value="Delete" class="btn btn-danger">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Update Profile</button>
+                            </div>
+
+                            <!-- Profile Modal -->
+                            <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel">Profile</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
+                              </div>
+                              <div class="modal-body">
+                                <h1>Elmo</h1>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="profileInputEmail">Email address</label>
+                                        <input type="email" class="form-control" id="profileInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profileInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="profileInputPassword1" placeholder="Enter Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profileInputPassword2">Confirm Password</label>
+                                        <input type="password" class="form-control" id="profileInputPassword2" placeholder="Confirm Password">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Update Profile</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Profile Modal -->
-            <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="profileModalLabel">Profile</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <h1>Elmo</h1>
-                <form>
-                    <div class="form-group">
-                        <label for="profileInputEmail">Email address</label>
-                        <input type="email" class="form-control" id="profileInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <label for="profileInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="profileInputPassword1" placeholder="Enter Password">
-                    </div>
-                    <div class="form-group">
-                        <label for="profileInputPassword2">Confirm Password</label>
-                        <input type="password" class="form-control" id="profileInputPassword2" placeholder="Confirm Password">
-                    </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Update Profile</button>
-              </div>
-            </div>
-          </div>
-        </div>
 
+            </div>
         </div>
     </div>
-</div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -158,7 +196,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 
 </body>
 </html>
