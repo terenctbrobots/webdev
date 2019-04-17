@@ -62,7 +62,7 @@
                     <a class="nav-link" href="sessions.html">Sessions</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="train.html">Train</a>
+                    <a class="nav-link" style="color: white;" href="train.html">Train</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="search.html">Search</a>
@@ -78,60 +78,72 @@
         </div>
         <div class="col p-3">
                             <h1>Train</h1>
+                            <h2>Session: Using more Hyperparams Set 1</h2>
                 <input type="button" value="Train" class="btn btn-info float-right">
             <div>
             <div class="line"/>
-            <h2>Models</h2>
-            <table class="table">
-                <tr>
-                    <td>Name</td>
-                    <td>Notes</td>
-                    <td>Parameters</td>
-                </tr>
-                <tr>
-                    <td>My Model 1</td>
-                    <td>Notes on Model 1</td>
-                    <td>???</td>
-                </tr>
-                <tr>
-                    <td>My Model 2</td>
-                    <td>Notes on Model 2</td>
-                    <td>???</td>
-                </tr>
-                <tr>
-                    <td>My Model 3</td>
-                    <td>Notes on Model 3</td>
-                    <td>???</td>
-                </tr>
-            </table>
-            <div class="float-right">
-                <input type="button" value="Add" class="btn btn-info">
-                <input type="button" value="Remove" class="btn btn-danger">
-            </div>        
+            <h2><a href="#models" data-toggle="collapse">Models</a></h2>
+            <div id="models" class="collapse">
+                <table class="table">
+                    <tr>
+                        <td>Name</td>
+                        <td>Notes</td>
+                        <td>Parameters</td>
+                    </tr>
+                    <tr>
+                        <td>My Model 1</td>
+                        <td>Notes on Model 1</td>
+                        <td>???</td>
+                    </tr>
+                    <tr>
+                        <td>My Model 2</td>
+                        <td>Notes on Model 2</td>
+                        <td>???</td>
+                    </tr>
+                    <tr>
+                        <td>My Model 3</td>
+                        <td>Notes on Model 3</td>
+                        <td>???</td>
+                    </tr>
+                </table>
+                <div class="float-right">
+                    <input type="button" value="Add" class="btn btn-info">
+                    <input type="button" value="Remove" class="btn btn-danger">
+                </div>        
+            </div>
             <div class="line"/>
-            <h2>Directories</h2>
-            <table class="table">
-                <tr>
-                    <td>Directory</td>
-                    <td>Status</td>
-                </tr>
-                <tr>
-                    <td>Models/Directory1</td>
-                    <td>Training...</td>
-                </tr>
-                <tr>
-                    <td>Models/Directory2</td>
-                    <td>Normal</td>
-                </tr>
-                <tr>
-                    <td>Models/Directory3</td>
-                    <td>Normal</td>
-                </tr>
-            </table>
-            <div class="float-right">
-                <input type="button" value="Add" class="btn btn-info">
-                <input type="button" value="Remove" class="btn btn-danger">
-            </div>        
+
+            <h2><a href="#directory" data-toggle="collapse">Directory</a></h2>
+            <div id="directory" class="collapse">
+                <table class="table">
+                    <tr>
+                        <td>Directory</td>
+                        <td>Status</td>
+                    </tr>
+                    <tr>
+                        <td>Models/Directory1</td>
+                        <td>Training...</td>
+                    </tr>
+                    <tr>
+                        <td>Models/Directory2</td>
+                        <td>Normal</td>
+                    </tr>
+                    <tr>
+                        <td>Models/Directory3</td>
+                        <td>Normal</td>
+                    </tr>
+                </table>
+                <div class="float-right">
+                    <input type="button" value="Add" class="btn btn-info">
+                    <input type="button" value="Remove" class="btn btn-danger">
+                </div>        
+            </div>
+
+            <div class="line"></div>
+            <h2>Log</h2>
+            <textarea class="form-control rounded-0" rows="10" readonly>
+                Currently processing.....
+            </textarea>
 
 
             <!-- Profile Modal -->

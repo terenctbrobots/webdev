@@ -33,7 +33,7 @@
                     </a>
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Dashboard</a>
+                            <a class="nav-link" style="color: white;" href="#">Dashboard</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-toggle="modal" data-target="#profileModal">Profile</a>
@@ -58,7 +58,7 @@
                             <a class="nav-link" href="main.html">News</a>
                         </li>
                         <li>
-                            <a class="nav-link active" href="sessions.html">Sessions</a>
+                            <a class="nav-link" style="color: white;" href="sessions.html">Sessions</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="train.html">Train</a>
@@ -91,7 +91,8 @@
                                     <input type="button" value="Expand" class="btn btn-info float-left">
                                 </div>
                                 <div class="float-right">
-                                    <input type="button" value="Share" class="btn btn-info">
+                                    <input type="button" value="Publish" class="btn btn-info">
+                                    <input type="button" value="Share" data-toggle="modal" data-target="#shareModal" class="btn btn-info">
                                     <input type="button" value="Clone" class="btn btn-info">
                                     <input type="button" value="Delete" class="btn btn-danger">
                                 </div>
@@ -108,7 +109,8 @@
                                     </div>
                                     <div class="float-right">
                                         <input type="button" value="Activate" class="btn btn-info">
-                                        <input type="button" value="Share" class="btn btn-info">
+                                        <input type="button" value="Publish" class="btn btn-info">
+                                        <input type="button" value="Share" class="btn btn-info"  data-toggle="modal" data-target="#shareModal">
                                         <input type="button" value="Clone" class="btn btn-info">
                                         <input type="button" value="Delete" class="btn btn-danger">
                                     </div>
@@ -118,70 +120,143 @@
                             <!-- Add Modal -->
 
                             <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
-                              <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="profileModalLabel">Add</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                  </button>
-                              </div>
-                              <div class="modal-body">
-                                <h1>Elmo</h1>
-                    <div role="tabpanel">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#uploadTab" aria-controls="uploadTab" role="tab" data-toggle="tab">Upload</a>
-
-                        </li>
-                        <li role="presentation"><a href="#browseTab" aria-controls="browseTab" role="tab" data-toggle="tab">Browse</a>
-
-                        </li>
-                    </ul>
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="uploadTab">upload Tab</div>
-                        <div role="tabpanel" class="tab-pane" id="browseTab">browseTab</div>
-                    </div>
-                </div>
-
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="profileModalLabel">Add Session</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div role="tabpanel">
+                                            <!-- Nav tabs -->
+                                                <ul class="nav nav-tabs" role="tablist">
+                                                    <li role="presentation" class="active"><a href="#createTab" aria-controls="createTab" role="tab" data-toggle="tab">Create</a></li>
+                                                    <li role="presentation"><a href="#sharedTab" aria-controls="sharedTab" role="tab" data-toggle="tab">Shared</a></li>
+                                                    <li role="presentation"><a href="#publicTab" aria-controls="publicTab" role="tab" data-toggle="tab">Public</a></li>
+                                                </ul>
+                                                <!-- Tab panes -->
+                                                <div class="tab-content">
+                                                    <div role="tabpanel" class="tab-pane active" id="createTab">
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label for="sessionInputName">Name</label>
+                                                                <input type="text" class="form-control" id="sessionInputName" aria-describedby="sessionHelp" placeholder="Enter Name">
+                                                                <label for="sessionInputName">Description</label>
+                                                                <textarea class="form-control" id="sessionInputDescription" rows="5"></textarea>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane" id="sharedTab">
+                                                        <table class="table table-hover table-bordered" id="sharedTable">
+                                                            <tr>
+                                                                <td>Name</td>
+                                                                <td>User</td>
+                                                            </tr>
+                                                            <tr class="clickable-row bg-info">
+                                                                <td>Advance HyperParam 1</td>
+                                                                <td>Penny</td>
+                                                            </tr>
+                                                            <tr class="clickable-row">
+                                                                <td>Advance HyperParam 2</td>
+                                                                <td>Johnson</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane" id="publicTab">
+                                                        <table class="table table-hover table-bordered" id="sharedTable">
+                                                            <tr>
+                                                                <td>Name</td>
+                                                                <td>User</td>
+                                                            </tr>
+                                                            <tr class="clickable-row bg-info">
+                                                                <td>Public HyperParam 1</td>
+                                                                <td>Penny</td>
+                                                            </tr>
+                                                            <tr class="clickable-row">
+                                                                <td>Public HyperParam 2</td>
+                                                                <td>Johnson</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Confirm</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Update Profile</button>
+
+
+                            <!-- Share Modal -->
+                            <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="shareModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="shareModalLabel">Share</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table table-bordered">
+                                                <th>User</th>
+                                                <tr class="clickable-row bg-info">
+                                                    <td>Fred</td>
+                                                </tr>
+                                                <tr class="clickable-row">
+                                                    <td>Wilma</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Share</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <!-- Profile Modal -->
                             <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true">
-                              <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="profileModalLabel">Profile</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                  </button>
-                              </div>
-                              <div class="modal-body">
-                                <h1>Elmo</h1>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="profileInputEmail">Email address</label>
-                                        <input type="email" class="form-control" id="profileInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="profileModalLabel">Profile</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h1>Elmo</h1>
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="profileInputEmail">Email address</label>
+                                                    <input type="email" class="form-control" id="profileInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="profileInputPassword1">Password</label>
+                                                    <input type="password" class="form-control" id="profileInputPassword1" placeholder="Enter Password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="profileInputPassword2">Confirm Password</label>
+                                                    <input type="password" class="form-control" id="profileInputPassword2" placeholder="Confirm Password">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Update Profile</button>
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="profileInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="profileInputPassword1" placeholder="Enter Password">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="profileInputPassword2">Confirm Password</label>
-                                        <input type="password" class="form-control" id="profileInputPassword2" placeholder="Confirm Password">
-                                    </div>
-                                </form>
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Update Profile</button>
-                            </div>
+
+                            <!-- Page Conten End -->
                         </div>
                     </div>
                 </div>
@@ -189,6 +264,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $('#sharedTable').on('click', '.clickable-row', function(event) 
+        {
+            $(this).addClass('bg-info').siblings().removeClass('bg-info');
+        });
+    </script>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
