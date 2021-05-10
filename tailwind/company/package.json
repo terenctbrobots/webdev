@@ -4,7 +4,7 @@
   "description": "",
   "main": "postcss.config.js",
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "build": "postcss css/tailwind.css -o public/tailwind.css",
     "live-server": "live-server --open=public/index.html"
   },
   "keywords": [],
