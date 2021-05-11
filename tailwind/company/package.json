@@ -5,6 +5,7 @@
   "main": "postcss.config.js",
   "scripts": {
     "build": "postcss css/tailwind.css -o public/tailwind.css",
+    "production": "crossenv NODE_ENV=production postcss css/tailwind.css -o public/tailwind.css",
     "live-server": "live-server --open=public/index.html"
   },
   "keywords": [],
@@ -12,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.2.5",
+    "crossenv": "0.0.2-security",
     "live-server": "^1.2.1",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.1.2"
