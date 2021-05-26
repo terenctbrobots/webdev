@@ -1,13 +1,17 @@
 import React from "react"
 import Layout from "../components/layout"
 import Header from "../components/header"
+import Content from "../components/content"
 import Footer from "../components/footer"
+
+import WebsiteImg from "../images/update_website.jpg"
+import GatsbyImg from "../images/Gatsby-Logo.svg"
 
 const Home = () => {
     return(
     <Layout>
         <Header page="home" />
-        <div className="pt-8 pb-8 mx-10 border-l-8 border-r-8 border-b-8 border-gray-500 transform -translate-y-24">
+        <Content>
             <div className="m-8">
                 <h1 className="font-bold text-2xl mb-5 bg-title-texture from-red-500 w-60 pl-2 text-nav">
                 Information
@@ -26,7 +30,19 @@ const Home = () => {
                 </h1>
                 <div className="mb-2 flex p-8 w-full h-30 bg-gray-600 text-white rounded-md">
                     <div>
-                        <img  class="w-40 h-40 overflow-hidden" src="update_website.jpg" />
+                        <img  className="w-40 h-40 overflow-hidden" src={GatsbyImg} alt='gatsby logo'/>
+                    </div>
+                    <div className="m-4">
+                        <p className="text-xl bold text-nav m-1">Website updated!</p>
+                        <p className="text-lg italic m-1">27 May 2021</p>
+                        <p className="m1">
+                        We updated our website to use the power of Gatsby!
+                        </p>
+                    </div>
+                </div>
+                <div className="mb-2 flex p-8 w-full h-30 bg-gray-600 text-white rounded-md">
+                    <div>
+                        <img  className="w-40 h-40 overflow-hidden" src={WebsiteImg} alt='website screenshot'/>
                     </div>
                     <div className="m-4">
                         <p className="text-xl bold text-nav m-1">New Website!</p>
@@ -37,7 +53,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Content>
         <Footer />
     </Layout>
     )

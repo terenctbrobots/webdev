@@ -1,18 +1,20 @@
-import React from "react";
+import React from "react"
+import BannerImg from "../images/banner.png"
+import ClawImg from "../images/nav_claw.png"
 
 
 const Header = (props) => {
     return (
         <div className="my-5">
         <div className="object-center">
-            <img className="mx-auto" src='banner.png' alt='banner' />
+            <img className="mx-auto" src={BannerImg} alt='banner' />
         </div>
         <div className="mx-10 border-t-8 border-l-8 border-r-8 border-gray-500 h-8 transform translate-y-3">
 
         </div> 
         <div className="flex items-center mx-40 transform -translate-y-12 z-50">
             <div>
-                <img src="nav_claw.png" />
+                <img src={ClawImg} alt='claw'/>
             </div>
             <div className="flex justify-around items-center bg-nav-texture font-nav text-nav h-8 w-full">
                 <div className={props.page === 'home' && 'text-white'}>
