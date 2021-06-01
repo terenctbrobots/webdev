@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 import Content from "../components/content"
 import Footer from "../components/footer"
+import Topic from "../components/topic"
 
 import ReactImg from "../images/React-icon.svg"
 import DjangoImg from "../images/django-logo-negative.svg"
@@ -17,9 +18,7 @@ const Services = () => {
         <Header page="services"/>
             <Content>
                 <div className="m-8">
-                <h1 className="font-bold text-2xl mb-5 bg-title-texture from-red-500 w-60 pl-2 text-nav">
-                Full stack
-                </h1>
+                <Topic>Full stack</Topic>
                 <div className="flex mb-2">
                     <div className="w-72 h-50">
                         <img src={ReactImg}/>
@@ -50,9 +49,7 @@ const Services = () => {
                 </div>
             </div>
             <div className="m-8">
-                <h1 className="font-bold text-2xl mb-5 bg-title-texture from-red-500 w-60 pl-2 text-nav">
-                Game Development 
-                </h1>
+                <Topic>Game Development</Topic> 
                 <div className="flex mb-2">
                     <div className="w-72 h-50">
                         <img className="bg-white" src={UnityImg}/>

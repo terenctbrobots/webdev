@@ -7,6 +7,7 @@ import Content from "../components/content"
 import ProductLastCallImg from "../images/product_lastcall.gif"
 import ProductWarmongrelImg from "../images/product_warmongrel.jpeg"
 import ProductHnmImg from "../images/product_hnm.png"
+import Topic from "../components/topic"
 
 const Products = () => {
     return(
@@ -14,9 +15,7 @@ const Products = () => {
         <Header page="products"/>
         <Content>        
             <div className="m-8">
-                <h1 className="font-bold text-2xl mb-5 bg-title-texture from-red-500 w-60 pl-2 text-nav">
-                    Completed
-                </h1>
+                <Topic>Completed</Topic>
                 <div className="flex">
                     <div>
                         <img src={ProductLastCallImg} alt='last call product'/>
@@ -27,9 +26,7 @@ const Products = () => {
                 </div>
             </div>
             <div className="m-8">
-                <h1 className="font-bold text-2xl mb-5 bg-title-texture from-red-500 w-60 pl-2 text-nav">
-                    In-Production
-                </h1>
+                <Topic>In-Production</Topic>
                 <div className="flex mb-2">
                     <div className="w-72 h-38">
                         <img src={ProductWarmongrelImg} alt='warmongrel product'/>

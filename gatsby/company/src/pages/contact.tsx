@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import Content from "../components/content"
+import Topic from "../components/topic"
 
 const Contact = () => {
     return(
@@ -10,9 +11,7 @@ const Contact = () => {
         <Header page="contact"/>
         <Content>
             <div className="m-8">
-                <h1 className="font-bold text-2xl mb-5 bg-title-texture from-red-500 w-60 pl-2 text-nav">
-                Details
-                </h1>
+                <Topic>Details</Topic>
                 <p className="text-xl p-2">
                     If you like our ideas, our products or would simply like to just know more about us please feel free to contact us. We are open to discussion on any potential projects and new business opportunities.
                 </p>

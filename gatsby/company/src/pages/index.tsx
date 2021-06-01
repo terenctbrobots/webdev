@@ -6,16 +6,15 @@ import Footer from "../components/footer"
 
 import WebsiteImg from "../images/update_website.jpg"
 import GatsbyImg from "../images/Gatsby-Logo.svg"
+import Topic from "../components/topic"
 
 const Home = () => {
     return(
     <Layout>
-        <Header page="home" />
+        <Header page="index" />
         <Content>
             <div className="m-8">
-                <h1 className="font-bold text-2xl mb-5 bg-title-texture from-red-500 w-60 pl-2 text-nav">
-                Information
-                </h1>
+                <Topic>Information</Topic>
                 <p className="text-xl p-2">
                 Big Bad Robots is software development company focused on Full-stack and Game development. We have experience with frameworks such as React, Django and backend database systems like PostgresSQL.
                 We have developed Games from concept to production. We provide either custom development or with Game Engines such as Unity/Godot on PC/MacOS/Console and Mobile.
@@ -25,9 +24,7 @@ const Home = () => {
                 </p>
             </div>
             <div className="m-8">
-                <h1 className="font-bold text-2xl mb-5 bg-title-texture from-red-500 w-60 pl-2 text-nav">
-                Latest Updates
-                </h1>
+                <Topic>Latest Updates</Topic>
                 <div className="mb-2 flex p-8 w-full h-30 bg-gray-600 text-white rounded-md">
                     <div>
                         <img  className="w-40 h-40 overflow-hidden" src={GatsbyImg} alt='gatsby logo'/>
