@@ -14,8 +14,8 @@ module.exports = {
           name: "GatsbyJS",
           short_name: "GatsbyJS",
           start_url: "/",
-          background_color: "#6b37bf",
-          theme_color: "#6b37bf",
+          background_color: "#ffffff",
+          theme_color: "#ffffff",
           icon: "src/images/icon.png",
           icon_options: {
             purpose: `any maskable`,
