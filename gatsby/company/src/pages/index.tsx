@@ -11,7 +11,7 @@ import Topic from "../components/topic"
 const Home = () => {
     return(
     <Layout>
-        <Header page="index" />
+        <Header page="home" />
         <Content>
             <div className="m-8">
                 <Topic>Information</Topic>

@@ -16,30 +16,24 @@ const Products = () => {
         <Content>        
             <div className="m-8">
                 <Topic>Completed</Topic>
-                <div className="flex">
-                    <div>
-                        <img src={ProductLastCallImg} alt='last call product'/>
-                    </div>
-                    <div className="m-8 w-full text-xl">
+                <div className="lg:flex">
+                    <img className="w-72" src={ProductLastCallImg} alt='last call product'/>
+                    <div className="lg:m-8 w-full lg:text-xl">
                         Joe, recently laid off, receives a mysterious letter from a lawyer representing Uncle "Stinky" Pete. Uncle Pete, recently deceased has left him a bar, the "Last Call". Having childhood dreams of running a bar, Joe jumps at the opportunity, dragging his skeptical girlfriend Amelia along with him.
                     </div>
                 </div>
             </div>
             <div className="m-8">
                 <Topic>In-Production</Topic>
-                <div className="flex mb-2">
-                    <div className="w-72 h-38">
-                        <img src={ProductWarmongrelImg} alt='warmongrel product'/>
-                    </div>
-                    <div className="m-8 w-full text-xl">
+                <div className="lg:flex mb-2">
+                    <img className="w-72 h-38" src={ProductWarmongrelImg} alt='warmongrel product'/>
+                    <div className="lg:m-8 w-full lg:text-xl">
                         The Rise of Augments has turned the tide of battle in the system wars. As a Squad Commander for a mecenery Mechanized Company, lead your troops to victory and uncover your forgotten past.
                     </div>
                 </div>
-                <div className="flex mb-2">
-                    <div>
-                        <img src={ProductHnmImg} alt='honor and money product'/>
-                    </div>
-                    <div className="m-8 w-full text-xl">
+                <div className="lg:flex mb-2">
+                    <img src={ProductHnmImg} alt='honor and money product'/>
+                    <div className="lg:m-8 w-full lg:text-xl">
                         Join Calico,Kat and Lee hunting down the most dangerous criminals in the known galaxy. Earn money in this retro top down shooter to upgrade your equipment. 
                     </div>
                 </div>
