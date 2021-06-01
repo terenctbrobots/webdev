@@ -6,6 +6,7 @@ import Footer from "../components/footer"
 
 import WebsiteImg from "../images/update_website.jpg"
 import GatsbyImg from "../images/Gatsby-Logo.svg"
+import TailwindImg from "../images/tailwindcss-icon.svg"
 import Topic from "../components/topic"
 
 const Home = () => {
@@ -24,11 +25,19 @@ const Home = () => {
                 </p>
             </div>
             <div className="m-8">
-                <Topic>Latest Updates</Topic>
-                <div className="mb-2 flex p-8 w-full h-30 bg-gray-600 text-white rounded-md">
-                    <div>
-                        <img  className="w-40 h-40 overflow-hidden" src={GatsbyImg} alt='gatsby logo'/>
+                <Topic>Latest</Topic>
+                <div className="mb-2 flex p-8 w-full h-30 bg-gray-800 text-white rounded-md">
+                    <img  className="w-40 h-40 overflow-hidden" src={TailwindImg} alt='tailwind logo'/>
+                    <div className="m-4">
+                        <p className="text-xl bold text-nav m-1">Website updated for mobile</p>
+                        <p className="text-lg italic m-1">1 June 2021</p>
+                        <p className="m1">
+                            We use the power of tailwind to make our site compatible with mobile and tablets.
+                        </p>
                     </div>
+                </div>
+                <div className="mb-2 flex p-8 w-full h-30 bg-gray-800 text-white rounded-md">
+                    <img  className="w-40 h-40 overflow-hidden" src={GatsbyImg} alt='gatsby logo'/>
                     <div className="m-4">
                         <p className="text-xl bold text-nav m-1">Website updated!</p>
                         <p className="text-lg italic m-1">27 May 2021</p>
@@ -37,10 +46,8 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <div className="mb-2 flex p-8 w-full h-30 bg-gray-600 text-white rounded-md">
-                    <div>
-                        <img  className="w-40 h-40 overflow-hidden" src={WebsiteImg} alt='website screenshot'/>
-                    </div>
+                <div className="mb-2 flex p-8 w-full h-30 bg-gray-800 text-white rounded-md">
+                    <img  className="w-40 h-40 overflow-hidden" src={WebsiteImg} alt='website screenshot'/>
                     <div className="m-4">
                         <p className="text-xl bold text-nav m-1">New Website!</p>
                         <p className="text-lg italic m-1">12 May 2021</p>
