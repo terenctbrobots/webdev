@@ -32,7 +32,7 @@ const Home = () => {
                         <p className="md:text-xl bold text-nav m-1">Website updated for mobile</p>
                         <p className="md:text-lg italic m-1">1 June 2021</p>
                         <p className="m1">
-                            We use the power of tailwind to make our site compatible with mobile and tablets.
+                            We use the power of Tailwind CSS to make our site compatible with mobile and tablets.
                         </p>
                     </div>
                 </div>
