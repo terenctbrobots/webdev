@@ -4,6 +4,8 @@ import Header from "../components/header"
 import Content from "../components/content"
 import Footer from "../components/footer"
 
+import News from "../components/news"
+
 import WebsiteImg from "../images/update_website.jpg"
 import GatsbyImg from "../images/Gatsby-Logo.svg"
 import TailwindImg from "../images/tailwindcss-icon.svg"
@@ -26,36 +28,15 @@ const Home = () => {
             </div>
             <div className="m-8">
                 <Topic>Latest</Topic>
-                <div className="mb-2 md:flex p-8 w-full h-30 bg-gray-800 text-white rounded-md">
-                    <img  className="w-40 h-40 overflow-hidden" src={TailwindImg} alt='tailwind logo'/>
-                    <div className="m-4">
-                        <p className="md:text-xl bold text-nav m-1">Website updated for mobile</p>
-                        <p className="md:text-lg italic m-1">1 June 2021</p>
-                        <p className="m1">
-                            We use the power of Tailwind CSS to make our site compatible with mobile and tablets.
-                        </p>
-                    </div>
-                </div>
-                <div className="mb-2 md:flex p-8 w-full h-30 bg-gray-800 text-white rounded-md">
-                    <img  className="w-40 h-40 overflow-hidden" src={GatsbyImg} alt='gatsby logo'/>
-                    <div className="m-4">
-                        <p className="md:text-xl bold text-nav m-1">Website updated!</p>
-                        <p className="md:text-lg italic m-1">27 May 2021</p>
-                        <p className="m1">
-                        We updated our website to use the power of Gatsby!
-                        </p>
-                    </div>
-                </div>
-                <div className="mb-2 md:flex p-8 w-full h-30 bg-gray-800 text-white rounded-md">
-                    <img  className="w-40 h-40 overflow-hidden" src={WebsiteImg} alt='website screenshot'/>
-                    <div className="m-4">
-                        <p className="md:text-xl bold text-nav m-1">New Website!</p>
-                        <p className="md:text-lg italic m-1">12 May 2021</p>
-                        <p className="m1">
-                        We launch a new website that feels a bit retro but moves us forward with new products, services and workshops. Styled using Tailwind CSS no less!
-                        </p>
-                    </div>
-                </div>
+                <News image={TailwindImg} title="Website updated for mobile" date="1 June 2021">
+                We use the power of Tailwind CSS to make our site compatible with mobile and tablets.
+                </News>
+                <News image ={GatsbyImg} title="Website updated!" date="27 May 2021">
+                We updated our website to use the power of Gatsby!
+                </News>
+                <News image={WebsiteImg} title="New Website!" date="12 May 2021">
+                We launch a new website that feels a bit retro but moves us forward with new products, services and workshops. Styled using Tailwind CSS no less!
+                </News>
             </div>
         </Content>
         <Footer />
