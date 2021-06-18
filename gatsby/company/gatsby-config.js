@@ -6,6 +6,24 @@ module.exports = {
     url: "https://www.bigbadrobots.com"
   },
   plugins: [
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          name: `markup`,
+          path: `${__dirname}/src/markdown/`,
+        },
+      },
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          name: `images`,
+          path: `${__dirname}/src/images/`,
+        },
+      },
+      'gatsby-plugin-image',
+      'gatsby-plugin-sharp',
+      'gatsby-transformer-sharp',
+      'gatsby-transformer-remark',
       'gatsby-plugin-postcss',
       'gatsby-plugin-react-helmet',
       {
