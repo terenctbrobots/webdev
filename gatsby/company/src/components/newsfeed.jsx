@@ -26,7 +26,6 @@ const Newsfeed = () => {
 
   const newsItems = data.allMarkdownRemark.edges
 
-  console.log(newsItems)
   return (
       <div>
         {
