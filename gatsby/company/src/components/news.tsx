@@ -11,7 +11,6 @@ const News = (props) => {
                     <p className="md:text-lg italic m-1">{dayjs(props.date).format("MMMM D, YYYY")}</p>
                     <div dangerouslySetInnerHTML={ {__html:props.children} } />
                 </div>
-
         </div>
     )
 }

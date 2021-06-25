@@ -1,0 +1,7 @@
+.header-item-link {
+    @apply flex justify-center mt-2;
+}
+
+.header-item-text {
+    @apply text-xs lg:text-base;
+}
