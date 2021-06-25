@@ -1,0 +1,15 @@
+.nav-bar-item {
+    @apply p-2 text-base text-gray-600 hover:text-black focus:outline-none;
+}
+
+.menu-item {
+    @apply p-2;
+}
+
+.menu-item-header {
+    @apply text-lg;
+}
+
+.menu-item-description {
+    @apply text-xs;
+}
