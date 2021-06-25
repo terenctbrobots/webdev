@@ -22,7 +22,7 @@ const Home = () => {
                 We have developed Games from concept to production. We provide either custom development or with Game Engines such as Unity/Godot on PC/MacOS/Console and Mobile.
                 </p >
                 <p className="md:text-xl p-2">
-                Contact us if you looking for developers with over 20 years experience in Software and Game Development at biz -at- bigbadrobots.com
+                Contact us if you looking for developers with over 20 years experience in Software and Game Development at <a className="text-nav" href="mailto:biz@bigbadrobots.com">biz -at- bigbadrobots.com</a>
                 </p>
             </div>
             <div className="m-8">

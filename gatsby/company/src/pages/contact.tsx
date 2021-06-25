@@ -21,7 +21,7 @@ const Contact = () => {
                     <p>47300 Petaling Jaya</p>
                     <p>Selangor, Malaysia</p>
                 </div>
-                <p className="mt-2">For more information feel free to contact us at: <a className="text-nav" href="mailto:biz@bigbadrobots.com">biz -at- bigbadrobotscom</a> </p>
+                <p className="lg:text-xl mt-2">For more information feel free to contact us at: <a className="text-nav" href="mailto:biz@bigbadrobots.com">biz -at- bigbadrobotscom</a> </p>
             </div>
             </Content>
     <Footer />
