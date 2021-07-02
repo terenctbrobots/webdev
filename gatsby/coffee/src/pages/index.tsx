@@ -1,6 +1,7 @@
 import React from "react"
 
-import  TopNavBar from "../components/TopNavBar"
+import  TopNavBar from "components/TopNavBar/TopNavBar"
+import Slideshow from "components/Slideshow/Slideshow"
 
 const Home = () => {
     return (
@@ -9,7 +10,7 @@ const Home = () => {
                 Exciting updates to coffee rewards >>
            </div>
            <TopNavBar />
-
+            <Slideshow />    
         </div>
     )
 }

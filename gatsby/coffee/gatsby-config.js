@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: "Big Bad Robots",
@@ -6,6 +8,13 @@ module.exports = {
     url: "https://www.bigbadrobots.com"
   },
   plugins: [
+      {
+        resolve: 'gatsby-plugin-root-import',
+        options: {
+          'components': path.join(__dirname, 'src/components'),
+          'images': path.join(__dirname, 'src/images')
+        }
+      },
       {
         resolve: `gatsby-source-filesystem`,
         options: {

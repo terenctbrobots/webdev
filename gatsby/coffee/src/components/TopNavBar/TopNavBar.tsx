@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 import "./TopNavBar.css"
 
-import LogoImg from "../images/coffee-logo.jpg";
+import LogoImg from "images/coffee-logo.jpg";
 
 import MenuItemCoffee from "./MenuItemCoffee"
 import MenuItemMenu from "./MenuItemMenu"
@@ -41,7 +41,7 @@ const TopNavBar = () => {
 
 
     return (
-    <div>
+    <div className="relative">
         <div className="flex justify-between bg-gray-100">
             <div className="flex items-center">
                 <img className="m-2 h-14 rounded-md" src={LogoImg} alt="coffee-logo" />
