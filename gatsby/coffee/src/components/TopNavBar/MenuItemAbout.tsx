@@ -5,7 +5,7 @@ import "./TopNavBar.css"
 
 const MenuItemAbout = () => {
         return (
-            <div className="flex absolute">
+            <div className="flex absolute z-20">
                 <MenuSidePanel>
                     <div className="menu-item">
                         <div className="menu-item-header">Our Company</div>
