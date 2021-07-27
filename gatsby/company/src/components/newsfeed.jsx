@@ -17,6 +17,7 @@ const Newsfeed = () => {
                 publicURL
               }
               date
+              linkURL
             }
           }
         }
@@ -30,7 +31,7 @@ const Newsfeed = () => {
       <div>
         {
           newsItems.map( news => (
-            <News key={news.node.id} title={news.node.frontmatter.title} date={news.node.frontmatter.date} image={news.node.frontmatter.image.publicURL}>
+            <News key={news.node.id} title={news.node.frontmatter.title} date={news.node.frontmatter.date} image={news.node.frontmatter.image.publicURL} linkURL={news.node.frontmatter.linkURL}>
                 {news.node.html}
             </News>
           ))
