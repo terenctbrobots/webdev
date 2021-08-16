@@ -5,7 +5,7 @@ import "./TopNavBar.css"
 
 const MenuItemCoffee = () => {
         return (
-            <div className="flex absolute z-20">
+            <div className="flex absolute z-20 w-full">
                 <MenuSidePanel>
                     <div className="menu-item">
                         <div className="menu-item-header">Our Coffees</div>
@@ -24,7 +24,7 @@ const MenuItemCoffee = () => {
                         <div className="menu-item-description">Producing the highest quality through ethical and responsible practices</div>
                     </div>
                 </MenuSidePanel>
-                <div>
+                <div className="flex-grow">
                     Content goes here
                 </div>
             </div>

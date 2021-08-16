@@ -9,6 +9,19 @@ module.exports = {
   },
   plugins: [
       {
+        resolve: 'gatsby-source-google-photos',
+        options: {
+          albumsTitles: ["coffee"]
+        }
+      },
+      {
+        resolve: 'gatsby-source-google-spreadsheets',
+        options: {
+          spreadsheetId: '1lFMOi7oliVgknkH_-ClhcWnOUOmpoO_MDuB10YTV0Ws',
+          credentials: require('./coffee-319105-2c7e5ca9ee6b.json')
+        }
+      },
+      {
         resolve: 'gatsby-plugin-root-import',
         options: {
           'components': path.join(__dirname, 'src/components'),

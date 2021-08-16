@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "token": "gatsby-source-google-photos-token"
   },
   "dependencies": {
     "dayjs": "^1.10.5",
@@ -21,6 +22,8 @@
     "gatsby-plugin-manifest": "^3.6.0",
     "gatsby-plugin-sharp": "^3.7.1",
     "gatsby-source-filesystem": "^3.7.1",
+    "gatsby-source-google-photos": "^2.4.4",
+    "gatsby-source-google-spreadsheets": "^3.0.8",
     "gatsby-transformer-sharp": "^3.7.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

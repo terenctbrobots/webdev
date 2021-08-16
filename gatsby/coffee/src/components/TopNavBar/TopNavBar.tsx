@@ -41,8 +41,8 @@ const TopNavBar = () => {
 
 
     return (
-    <div className="relative pl-4 pr-4">
-        <div className="flex justify-between bg-gray-100">
+    <div className="relative">
+        <div className="flex justify-between bg-gray-100 pl-4 pr-4">
             <div className="flex items-center">
                 <img className="m-2 h-14 rounded-md" src={LogoImg} alt="coffee-logo" />
                 <button className="nav-bar-item" onClick={ () => handleCoffeeMenuItem() }>COFFEE</button>
